@@ -11,7 +11,9 @@ builder.Services.AddDbContext<DataContext>(options =>
 
     options.UseSqlite(connectionString);
 });
+
 builder.Services.AddCors();
+
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -24,15 +26,21 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
     app.UseSwaggerUI(options =>
     {
-        options.SwaggerEndpoint("/openapi/v1.json","Demo API");
+        options.SwaggerEndpoint("/openapi/v1.json", "Demo API");
     });
 }
 
 app.UseHttpsRedirection();
+
+app.UseStaticFiles();
+
 app.UseCors(opt =>
 {
-    opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:5173");
+    opt.AllowAnyHeader()
+        .AllowAnyMethod()
+        .WithOrigins("http://localhost:5173"); 
 });
+
 
 app.UseAuthorization();
 
