@@ -2,16 +2,17 @@ import { CircularProgress, Divider, Grid, TableBody, TableCell, TableContainer, 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { IProduct } from "../../model/IProduct";
+import requests from "../../api/request";
+import NotFound from "../../errors/NotFound";
 
 export default function ProductDetailsPage() {
 
-    const { id } = useParams();
+    const { id } = useParams<{id:string}>();
     const [product, setProduct] = useState<IProduct | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`http://localhost:5105/api/products/${id}`)
-            .then(response => response.json())
+        id && requests.Catalog.details(parseInt(id))
             .then(data => setProduct(data))
             .catch(error => console.log(error))
             .finally(() => setLoading(false));
@@ -19,7 +20,7 @@ export default function ProductDetailsPage() {
 
     if(loading) return <CircularProgress />
 
-    if(!product) return <h5>Product not found...</h5>;
+    if(!product) return <NotFound />;
 
     return (
         <Grid container spacing={6}>
