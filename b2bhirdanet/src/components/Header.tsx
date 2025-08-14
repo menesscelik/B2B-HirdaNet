@@ -1,6 +1,7 @@
 import { ShoppingCart } from "@mui/icons-material";
 import { AppBar, Toolbar, Typography, Box, IconButton, Badge, Stack, Button } from "@mui/material";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
+import { useCartContext } from "../context/CartContext";
 
 const links = [
   {title: "Home", to:"/"},
@@ -24,6 +25,9 @@ const navStyles = {
   }
 }
 export default function Header() {
+  const {cart} = useCartContext();
+  const itemCount = cart?.cartItems.reduce((total, item) => total + item.quantity, 0);
+
     return (
       <AppBar position="static" sx={{ mb: 4 }}>
         <Toolbar sx={{display:"flex", justifyContent: "space-between"}}>
@@ -36,8 +40,8 @@ export default function Header() {
             </Stack>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center"}}>
-              <IconButton size="large" edge="start" color="inherit" >
-              <Badge badgeContent="2" color="secondary">
+              <IconButton component={Link} to="/cart"  size="large" edge="start" color="inherit" >
+              <Badge badgeContent={itemCount} color="secondary">
                 <ShoppingCart/>
               </Badge>
               </IconButton>
