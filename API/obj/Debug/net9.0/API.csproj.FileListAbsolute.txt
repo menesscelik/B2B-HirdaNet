@@ -147,3 +147,12 @@ C:\Users\menes\Desktop\B2B-hirdanet\API\obj\Debug\net9.0\API.pdb
 C:\Users\menes\Desktop\B2B-hirdanet\API\obj\Debug\net9.0\API.genruntimeconfig.cache
 C:\Users\menes\Desktop\B2B-hirdanet\API\obj\Debug\net9.0\ref\API.dll
 C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\menes\Desktop\B2B-hirdanet\API\bin\Debug\net9.0\Scalar.AspNetCore.dll
