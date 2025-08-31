@@ -1,7 +1,7 @@
 import { createBrowserRouter, Navigate } from "react-router";
-import HomePage from "../features/HomePage";
 import App from "../layout/App";
 import AboutPage from "../features/AboutPage";
+import HomePage from "../features/HomePage";
 import ContactPage from "../features/ContactPage";
 import CatalogPage from "../features/Catalog/CatalogPage";
 import ProductDetailsPage from "../features/Catalog/ProductDetails";
@@ -9,6 +9,8 @@ import ErrorPage from "../features/ErrorPage";
 import ServerError from "../errors/ServerError";
 import NotFound from "../errors/NotFound";
 import ShoppingCartPage from "../features/Cart/ShoppingCartPage";
+import LoginPage from "../features/account/loginPage";
+import RegisterPage from "../features/account/RegisterPage";
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +23,8 @@ export const router = createBrowserRouter([
             { path: "catalog", element: <CatalogPage /> },
             { path: "cart", element: <ShoppingCartPage /> },
             { path: "catalog/:id", element: <ProductDetailsPage /> },
+            { path: "login", element: <LoginPage /> },
+            { path: "register", element: <RegisterPage /> },
             { path: "error", element: <ErrorPage /> },
             { path: "server-error", element: <ServerError /> },
             { path: "not-found", element: <NotFound /> },

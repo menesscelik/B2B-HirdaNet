@@ -30,16 +30,9 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequireUppercase = false;
     options.Password.RequireDigit = false;
 
-
     options.User.RequireUniqueEmail = true;
     options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
-
-    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-    options.Lockout.MaxFailedAccessAttempts = 5;
-    options.Lockout.AllowedForNewUsers = true;
-
 });
-
 builder.Services.AddAuthentication(x =>
 {
     x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -50,7 +43,7 @@ builder.Services.AddAuthentication(x =>
             x.TokenValidationParameters = new TokenValidationParameters
             {
                 ValidateIssuer = false,
-                ValidIssuer = "menescelik.com",
+                ValidIssuer = "sadikturan.com",
                 // ValidIssuers = ["",""],
                 ValidateAudience = false,
                 ValidAudience = "abc",
@@ -87,16 +80,11 @@ app.UseStaticFiles();
 
 app.UseCors(opt =>
 {
-    opt.AllowAnyHeader()
-        .AllowAnyMethod()
-        .AllowCredentials()
-        .WithOrigins("http://localhost:5173"); 
+    opt.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("http://localhost:5173");
 });
 
 app.UseAuthentication();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 SeedDatabase.Initialize(app);

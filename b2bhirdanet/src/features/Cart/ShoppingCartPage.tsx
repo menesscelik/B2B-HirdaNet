@@ -3,8 +3,10 @@ import { AddCircleOutline, Delete, RemoveCircleOutline } from "@mui/icons-materi
 import { LoadingButton } from "@mui/lab";
 import CartSummary from "./CartSummary";
 import { currenyTRY } from "../../utils/formatCurrency";
-import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { addItemToCart, deleteItemFromCart } from "./cartSlice";
+import { useAppDispatch, useAppSelector } from "../../store/store";
+
+
 
 export default function ShoppingCartPage()
 {

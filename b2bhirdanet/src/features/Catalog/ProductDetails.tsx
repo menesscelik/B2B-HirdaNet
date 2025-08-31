@@ -7,8 +7,8 @@ import NotFound from "../../errors/NotFound";
 import { LoadingButton } from "@mui/lab";
 import { AddShoppingCart } from "@mui/icons-material";
 import { currenyTRY } from "../../utils/formatCurrency";
-import { useAppDispatch, useAppSelector } from "../../hooks/hooks";
 import { addItemToCart } from "../Cart/cartSlice";
+import { useAppDispatch, useAppSelector } from "../../store/store";
 
 export default function ProductDetailsPage() {
 
