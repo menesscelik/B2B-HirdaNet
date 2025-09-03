@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5a4Fd7f7AGpdgWT4Ry6kwGjCDXpW5e6ExeqOBDTyOuk=",
+  "Hash": "6krEgTJjVq08U3C8woyQiwxYbmQJRuigIH+grJSGvqk=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "API\\wwwroot",
       "Source": "API",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\1.jpg",
+      "Identity": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\1.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1.jpg"
     },
     {
-      "Identity": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\2.jpg",
+      "Identity": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\2.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2.jpg"
     },
     {
-      "Identity": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\3.jpg",
+      "Identity": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\3.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/3#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\images\\3.jpg"
     },
     {
-      "Identity": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\4.jpg",
+      "Identity": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\4.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\images\\4.jpg"
     },
     {
-      "Identity": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\5.jpg",
+      "Identity": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\5.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\5.jpg"
     },
     {
-      "Identity": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\6.jpg",
+      "Identity": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\6.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\images\\6.jpg"
     },
     {
-      "Identity": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\7.jpg",
+      "Identity": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\7.jpg",
       "SourceId": "API",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\",
       "BasePath": "_content/API",
       "RelativePath": "images/7#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -167,7 +167,7 @@
   "Endpoints": [
     {
       "Route": "images/1.3hkxvo0xqq.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\1.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -188,7 +188,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:26:34 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -212,7 +212,7 @@
     },
     {
       "Route": "images/1.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\1.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -233,7 +233,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:26:34 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -249,7 +249,7 @@
     },
     {
       "Route": "images/2.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\2.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -270,7 +270,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:26:50 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -286,7 +286,7 @@
     },
     {
       "Route": "images/2.vssi81a86z.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\2.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -307,7 +307,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:26:50 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -331,7 +331,7 @@
     },
     {
       "Route": "images/3.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\3.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -352,7 +352,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:26:57 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -368,7 +368,7 @@
     },
     {
       "Route": "images/3.xrzecoeyav.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\3.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\3.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -389,7 +389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:26:57 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -413,7 +413,7 @@
     },
     {
       "Route": "images/4.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\4.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -434,7 +434,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:05 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -450,7 +450,7 @@
     },
     {
       "Route": "images/4.mt3q269pqe.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\4.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -471,7 +471,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:05 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -495,7 +495,7 @@
     },
     {
       "Route": "images/5.d93q1lyj7c.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\5.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -516,7 +516,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:13 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -540,7 +540,7 @@
     },
     {
       "Route": "images/5.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\5.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -561,7 +561,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:13 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -577,7 +577,7 @@
     },
     {
       "Route": "images/6.1mgbua76o9.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\6.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -598,7 +598,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:19 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -622,7 +622,7 @@
     },
     {
       "Route": "images/6.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\6.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -643,7 +643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:19 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -659,7 +659,7 @@
     },
     {
       "Route": "images/7.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\7.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -680,7 +680,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:26 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -696,7 +696,7 @@
     },
     {
       "Route": "images/7.xrzecoeyav.jpg",
-      "AssetFile": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\wwwroot\\images\\7.jpg",
+      "AssetFile": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -717,7 +717,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 28 Nov 2024 13:27:26 GMT"
+          "Value": "Mon, 01 Sep 2025 20:30:30 GMT"
         },
         {
           "Name": "Cache-Control",

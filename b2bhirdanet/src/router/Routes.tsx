@@ -9,14 +9,22 @@ import ErrorPage from "../features/ErrorPage";
 import ServerError from "../errors/ServerError";
 import NotFound from "../errors/NotFound";
 import ShoppingCartPage from "../features/Cart/ShoppingCartPage";
-import LoginPage from "../features/account/loginPage";
 import RegisterPage from "../features/account/RegisterPage";
+import LoginPage from "../features/account/loginPage";
+import CheckoutPage from "../features/checkout/CheckoutPage";
+import AuthGuard from "./AuthGuard";
+import OrderList from "../features/orders/OrderList";
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
         children: [
+            { element: <AuthGuard />, children: [
+                    { path: "checkout", element: <CheckoutPage /> },
+                    { path: "orders", element: <OrderList /> },
+                ] 
+            },
             { path: "", element: <HomePage /> },
             { path: "about", element: <AboutPage /> },
             { path: "contact", element: <ContactPage /> },

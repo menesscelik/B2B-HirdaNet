@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\API.csproj": {}
+    "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\API.csproj": {
+    "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\API.csproj",
+        "projectPath": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\API.csproj",
         "packagesPath": "C:\\Users\\menes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\menes\\Desktop\\B2B-hirdanet\\API\\obj\\",
+        "outputPath": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

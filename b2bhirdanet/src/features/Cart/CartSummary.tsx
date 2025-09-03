@@ -1,6 +1,7 @@
 import { TableCell, TableRow } from "@mui/material";
 import { currenyTRY } from "../../utils/formatCurrency";
 import { useAppSelector } from "../../store/store";
+
 export default function CartSummary() {
     const { cart } = useAppSelector(state => state.cart);
     const subTotal = cart?.cartItems.reduce((toplam, item) => toplam + (item.quantity * item.price), 0) ?? 0;
