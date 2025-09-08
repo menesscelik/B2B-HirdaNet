@@ -13,7 +13,11 @@ import RegisterPage from "../features/account/RegisterPage";
 import LoginPage from "../features/account/loginPage";
 import CheckoutPage from "../features/checkout/CheckoutPage";
 import AuthGuard from "./AuthGuard";
+import AdminGuard from "./AdminGuard";
 import OrderList from "../features/orders/OrderList";
+import AdminPage from "../features/admin/AdminPage";
+import AdminUsersPage from "../features/admin/AdminUsersPage";
+import AdminContactPage from "../features/admin/AdminContactPage";
 
 export const router = createBrowserRouter([
     {
@@ -25,6 +29,9 @@ export const router = createBrowserRouter([
                     { path: "orders", element: <OrderList /> },
                 ] 
             },
+            { element: <AdminGuard><AdminPage /></AdminGuard>, path: "admin" },
+            { element: <AdminGuard><AdminUsersPage /></AdminGuard>, path: "admin/users" },
+            { element: <AdminGuard><AdminContactPage /></AdminGuard>, path: "admin/contacts" },
             { path: "", element: <HomePage /> },
             { path: "about", element: <AboutPage /> },
             { path: "contact", element: <ContactPage /> },

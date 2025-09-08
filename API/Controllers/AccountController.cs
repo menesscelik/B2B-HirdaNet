@@ -54,10 +54,13 @@ public class AccountController : ControllerBase
             cookieCart.CustomerId = model.UserName;
             await _context.SaveChangesAsync();
 
+            var roles = await _userManager.GetRolesAsync(user);
+
             return Ok(new UserDTO
             {
                 Name = user.Name!,
-                Token = await _tokenService.GenerateToken(user)
+                Token = await _tokenService.GenerateToken(user),
+                Roles = roles.ToList()
             });
         }
 
@@ -134,10 +137,13 @@ public class AccountController : ControllerBase
             return BadRequest(new ProblemDetails { Title = "username ya da parola hatalı" });
         }
 
+        var roles = await _userManager.GetRolesAsync(user);
+
         return new UserDTO
         {
             Name = user.Name!,
-            Token = await _tokenService.GenerateToken(user)
+            Token = await _tokenService.GenerateToken(user),
+            Roles = roles.ToList()
         };
     }
 

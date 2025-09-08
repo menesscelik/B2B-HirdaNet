@@ -48,11 +48,15 @@ export default function Header() {
       setAnchorEl(null);
     }
 
+    // Kullanıcının admin rolüne sahip olup olmadığını kontrol et
+    const isAdmin = user?.roles?.includes("Admin");
+
     return (
       <AppBar position="static" sx={{ mb: 4 }}>
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={ { display: "flex", justifyContent: "space-between"} }>
               <Box sx={{ display: "flex", alignItems: "center"}}>
+                <Button component={NavLink} to="/" sx={{ fontWeight: 700, mr: 2, color: 'common.white', textDecoration: 'none', '&:hover': { color: 'common.white' }, '&.active': { color: 'common.white' } }}>Hirda-net</Button>
                 <Stack direction="row">
                   { links.map(link => 
                     <Button key={link.to} component={NavLink} to={link.to} sx={navStyles}>{link.title}</Button>
@@ -75,6 +79,13 @@ export default function Header() {
                       
                           <Menu id="user-menu" anchorEl={anchorEl} open={open} onClose={handleClose}>
                             <MenuItem component={Link} to="/orders">Orders</MenuItem>
+                            {isAdmin && (
+                              <>
+                                <MenuItem component={Link} to="/admin">Admin Ürünler</MenuItem>
+                                <MenuItem component={Link} to="/admin/users">Admin Kullanıcılar</MenuItem>
+                                <MenuItem component={Link} to="/admin/contacts">Gelen Mesajlar</MenuItem>
+                              </>
+                            )}
                             <MenuItem onClick={() => { 
                               dispatch(logout())
                               dispatch(clearCart())

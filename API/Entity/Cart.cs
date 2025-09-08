@@ -25,7 +25,7 @@ public class Cart
         if (item == null) return;
 
         item.Quantity -= quantity;
-        if (item.Quantity == 0)
+        if (item.Quantity <= 0)
         {
             CartItems.Remove(item);
         }

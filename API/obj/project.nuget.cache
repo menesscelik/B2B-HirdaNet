@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hMkR9fg+1ys=",
+  "dgSpecHash": "W5LrKJMluFQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\menes\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\menes\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\9.0.0\\microsoft.aspnetcore.authentication.jwtbearer.9.0.0.nupkg.sha512",

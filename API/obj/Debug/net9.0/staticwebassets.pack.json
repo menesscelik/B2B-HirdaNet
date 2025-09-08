@@ -1,32 +1,36 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\1.jpg",
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\1.jpg",
       "PackagePath": "staticwebassets\\images\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\2.jpg",
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\2.jpg",
       "PackagePath": "staticwebassets\\images\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\3.jpg",
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\3.jpg",
       "PackagePath": "staticwebassets\\images\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\4.jpg",
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\4.jpg",
       "PackagePath": "staticwebassets\\images\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\5.jpg",
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\5.jpg",
       "PackagePath": "staticwebassets\\images\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\6.jpg",
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\6.jpg",
       "PackagePath": "staticwebassets\\images\\6.jpg"
     },
     {
-      "Id": "C:\\Users\\menes\\Documents\\GitHub\\B2B-HirdaNet\\API\\wwwroot\\images\\7.jpg",
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\7.jpg",
       "PackagePath": "staticwebassets\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\menes\\Desktop\\B2B-HirdaNet\\API\\wwwroot\\images\\products\\afd3b37b-b3f6-46ca-b130-d69a2e5abb5a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\afd3b37b-b3f6-46ca-b130-d69a2e5abb5a.jpg"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

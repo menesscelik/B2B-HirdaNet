@@ -51,7 +51,7 @@ const queries = {
     get: (url: string) => axios.get(url).then((response: AxiosResponse) => response.data), 
     post: (url: string, body: {}) => axios.post(url, body).then((response: AxiosResponse) => response.data), 
     put: (url: string, body: {}) => axios.put(url, body).then((response: AxiosResponse) => response.data), 
-    delete: (url: string) => axios.delete(url).then((response: AxiosResponse) => response.data), 
+    delete: (url: string) => axios.delete(url).then((response: AxiosResponse) => response.data)
 }
 
 const Errors = {
@@ -64,7 +64,11 @@ const Errors = {
 
 const Catalog = {
     list: () => queries.get("products"),
-    details: (id: number) => queries.get(`products/${id}`)
+    listAllForAdmin: () => queries.get("products?includeInactive=true"),
+    details: (id: number) => queries.get(`products/${id}`),
+    create: (product: any) => queries.post("products", product),
+    update: (id: number, product: any) => queries.put(`products/${id}`, product),
+    delete: (id: number) => queries.delete(`products/${id}`)
 }
 
 const Cart = {
@@ -85,8 +89,22 @@ const Order = {
     createOrder: (formData: any) => queries.post("orders", formData)
 }
 
+const Contact = {
+    submit: (formData: any) => queries.post("contact", formData)
+}
+
+const Admin = {
+    users: () => queries.get("admin/users"),
+    userOrders: (userName: string) => queries.get(`admin/users/${userName}/orders`),
+    updateUserStatus: (userName: string, isLocked: boolean) => queries.put(`admin/users/${userName}/status`, { IsLocked: isLocked }),
+    deleteUser: (userName: string) => queries.delete(`admin/users/${userName}`),
+    updateOrderStatus: (orderId: number, status: number) => queries.put(`admin/orders/${orderId}/status`, { status }),
+    contactMessages: () => queries.get("admin/contact-messages"),
+    deleteContactMessage: (index: number) => queries.delete(`admin/contact-messages/${index}`)
+}
+
 const requests = {
-    Catalog, Errors, Cart, Account, Order
+    Catalog, Errors, Cart, Account, Order, Contact, Admin
 }
 
 export default requests

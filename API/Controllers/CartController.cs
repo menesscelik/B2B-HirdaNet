@@ -33,7 +33,14 @@ public class CartController : ControllerBase
         if (product == null)
             return NotFound("the product is not in database");
 
+        if (quantity <= 0)
+            return BadRequest(new ProblemDetails { Title = "Quantity must be greater than zero" });
+
+        if (product.Stock < quantity)
+            return BadRequest(new ProblemDetails { Title = "Yeterli stok yok" });
+
         cart.AddItem(product, quantity);
+        product.Stock -= quantity;
 
         var result = await _context.SaveChangesAsync() > 0;
 
@@ -48,7 +55,20 @@ public class CartController : ControllerBase
     {
         var cart = await GetOrCreate(GetCustomerId());
 
-        cart.DeleteItem(productId, quantity);
+        if (quantity <= 0)
+            return BadRequest(new ProblemDetails { Title = "Quantity must be greater than zero" });
+
+        var product = await _context.Products.FirstOrDefaultAsync(i => i.Id == productId);
+        if (product == null)
+            return NotFound("the product is not in database");
+
+        var existingItem = cart.CartItems.FirstOrDefault(ci => ci.ProductId == productId);
+        if (existingItem == null)
+            return CreatedAtAction(nameof(GetCart), CartToDTO(cart));
+
+        var removeQty = Math.Min(quantity, existingItem.Quantity);
+        cart.DeleteItem(productId, removeQty);
+        product.Stock += removeQty;
 
         var result = await _context.SaveChangesAsync() > 0;
 

@@ -8,6 +8,16 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const orderStatus = [ "Pending", "Approved", "PaymentFailed","Completed"];
 
+function getStatusColors(status: number) {
+    switch (status) {
+        case 0: return { bg: 'warning.light', bar: 'warning.main' }; // Pending
+        case 1: return { bg: 'info.light', bar: 'info.main' }; // Approved
+        case 2: return { bg: 'error.light', bar: 'error.main' }; // PaymentFailed
+        case 3: return { bg: 'success.light', bar: 'success.main' }; // Completed
+        default: return { bg: 'grey.100', bar: 'grey.400' };
+    }
+}
+
 export default function OrderList()
 {
     const [orders, setOrders] = useState<Order[] | null>(null);
@@ -56,8 +66,10 @@ export default function OrderList()
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {orders?.map((order) => (
-                        <TableRow key={order.id}>
+                    {orders?.map((order) => {
+                        const colors = getStatusColors(order.orderStatus);
+                        return (
+                        <TableRow key={order.id} sx={{ backgroundColor: colors.bg }}>
                             <TableCell component="th" scope="row">{order.id}</TableCell>
                             <TableCell component="th" scope="row">{orderStatus[order.orderStatus]}</TableCell>
                             <TableCell component="th" scope="row">{new Date(order.orderDate).toLocaleString()}</TableCell>
@@ -66,7 +78,7 @@ export default function OrderList()
                                 <Button onClick={() => handleDialogOpen(order)} size="small" variant="contained" endIcon={<ArrowRightIcon />}>Details</Button>
                             </TableCell>
                         </TableRow>
-                    ))}
+                    )})}
                 </TableBody>
             </Table>
         </TableContainer>
@@ -82,7 +94,7 @@ export default function OrderList()
                 <CloseIcon />
             </IconButton>
             <DialogContent dividers>
-                    <Paper sx={{p:3,mb:3}}>
+                    <Paper sx={{p:3,mb:3, borderLeft: '6px solid', borderLeftColor: getStatusColors(selectedOrder?.orderStatus ?? -1).bar, backgroundColor: getStatusColors(selectedOrder?.orderStatus ?? -1).bg }}>
                         <Typography variant="subtitle2" gutterBottom>Teslimat Bilgileri</Typography>
                         <Typography gutterBottom>{selectedOrder?.firstName} {selectedOrder?.lastName}</Typography>
                         <Typography gutterBottom>{selectedOrder?.phone}</Typography>
