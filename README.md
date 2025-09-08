@@ -1,70 +1,70 @@
-# Hırdanet B2B E-Ticaret Platformu
+# Hırdanet B2B E-Commerce Platform
 
-## 📌 Proje Hakkında
+## 📌 About the Project
 
-Hırdanet B2B, işletmelerin ürünlerini bayilere ulaştırmasını sağlayan modern bir **B2B e-ticaret platformudur**.  
-Proje, hem **müşteri tarafı** (ürün inceleme, sepet, sipariş oluşturma) hem de **yönetici tarafı** (ürün, kullanıcı ve sipariş yönetimi) özelliklerini kapsayan uçtan uca bir sistem olarak geliştirilmiştir.
+Hırdanet B2B is a modern **B2B e-commerce platform** that enables businesses to deliver their products to dealers.  
+The project covers both the **customer side** (product browsing, cart, order creation) and the **admin side** (product, user, and order management), providing a full end-to-end system.
 
-Bu proje kişisel olarak geliştirilmiş olup, modern web teknolojileri ve güncel yazılım mimarileriyle inşa edilmiştir. Amaç, profesyonel bir B2B çözümünün **backend** ve **frontend** entegrasyonunu gerçek bir ürün seviyesinde deneyimlemekti.
+This project has been developed personally, using modern web technologies and up-to-date software architectures. The goal is to experience the **backend** and **frontend** integration of a professional B2B solution at a real product level.
 
 ---
 
-## 🚀 Kullanılan Teknolojiler
+## 🚀 Technologies Used
 
 ### Backend
 
 - **ASP.NET Core 8.0 / .NET 9**
 - **Entity Framework 6 (EF6)**
-- **SQLite** veritabanı
-- **JWT Authentication** ile kimlik doğrulama
-- **Authorization Policy** ile rol ve yetki bazlı kontrol
+- **SQLite** database
+- **JWT Authentication**
+- **Authorization Policy** (role & permission-based access)
 - **Global Exception Handling**
-- **DTO Projection** & Katmanlı Mimari
+- **DTO Projection** & Layered Architecture
 - **Unit of Work & Generic Repository**
-- **MassTransit & RabbitMQ** ile mesaj kuyruğu
-- **Redis + FusionCache** ile önbellekleme
+- **MassTransit & RabbitMQ** for message queuing
+- **Redis + FusionCache** for caching
 
 ### Frontend
 
 - **React (TypeScript)**
-- **Redux Toolkit** ile state yönetimi
-- **Material UI (MUI)** ile modern UI tasarımı
-- **Axios** ile API entegrasyonu
-- **React Router** ile çok sayfalı yapı
-- **React-Toastify** ile bildirimler
+- **Redux Toolkit** for state management
+- **Material UI (MUI)** for modern UI design
+- **Axios** for API integration
+- **React Router** for multi-page routing
+- **React-Toastify** for notifications
 
 ---
 
-## 🛠️ Özellikler
+## 🛠️ Features
 
-### Kullanıcı Tarafı
+### Customer Side
 
-- Ürünleri listeleme, detay görüntüleme
-- Sepet oluşturma ve yönetme
-- Sipariş oluşturma & checkout süreci
-- Sipariş geçmişi ve detaylarını görüntüleme
-- Kayıt olma & giriş yapma
-- JWT tabanlı güvenli oturum yönetimi
+- Browse and view product details
+- Create and manage cart
+- Place orders & checkout process
+- View order history and details
+- User registration & login
+- Secure sessions with JWT
 
-### Yönetici (Admin) Paneli
+### Admin Panel
 
-- Yeni ürün ekleme, düzenleme, silme
-- Kullanıcı hesaplarını yönetme (aktif/pasif, silme, siparişleri görüntüleme)
-- Siparişlerin durumunu değiştirme
-- Kullanıcıların bıraktığı mesajları görüntüleme
-- AdminGuard ile rol bazlı erişim kontrolü
+- Add, edit, and delete products
+- Manage user accounts (activate/deactivate, delete, view orders)
+- Update order statuses
+- View customer messages
+- Role-based access control with AdminGuard
 
-### Genel Özellikler
+### General Features
 
-- Global hata yönetimi (ProblemDetails)
-- Modern 404 sayfası
-- Çok dilli karşılama sayfası
-- JSONL tabanlı iletişim mesajı kaydı
-- Responsive tasarım (mobil uyumlu)
+- Global error handling (ProblemDetails)
+- Modern 404 page
+- Multi-language welcome page
+- JSONL-based contact message logging
+- Responsive design (mobile-friendly)
 
 ---
 
-## 📂 Proje Yapısı (Özet)
+## 📂 Project Structure (Overview)
 
 ```
 Hirdanet-B2B/
@@ -79,30 +79,30 @@ Hirdanet-B2B/
 │   ├── src/pages/
 │   ├── src/store/
 │   ├── src/api/
-│── Infrastructure/     # Redis, MassTransit, Mail Service vb.
+│── Infrastructure/     # Redis, MassTransit, Mail Service etc.
 ```
 
 ---
 
-## 🔑 Kurulum ve Çalıştırma
+## 🔑 Installation & Setup
 
-Projeyi klonlamak için:
+Clone the repository:
 
 ```bash
 git clone https://github.com/menesscelik/B2B-HirdaNet.git
 cd B2B-HirdaNet
 ```
 
-### Gereksinimler
+### Prerequisites
 
-Projeyi çalıştırmak için aşağıdaki araçların kurulu olması gerekir:
+You need to have the following tools installed:
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 - [Node.js (>=18.x)](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) veya [yarn](https://yarnpkg.com/)
-- [SQLite](https://www.sqlite.org/download.html) (opsiyonel, EF Core otomatik oluşturur)
-- [Redis](https://redis.io/) (cache için)
-- [RabbitMQ](https://www.rabbitmq.com/) (mesaj kuyruğu için, opsiyonel)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [SQLite](https://www.sqlite.org/download.html) (optional, EF Core creates DB automatically)
+- [Redis](https://redis.io/) (for caching)
+- [RabbitMQ](https://www.rabbitmq.com/) (for messaging, optional)
 
 ### Backend
 
@@ -121,39 +121,39 @@ npm install
 npm run dev
 ```
 
-API varsayılan olarak **https://localhost:5105** üzerinden çalışır.  
-Frontend varsayılan olarak **http://localhost:5173** adresinde açılır.
+API runs on **https://localhost:5105** by default.  
+Frontend runs on **http://localhost:5173**.
 
 ---
 
-## 📖 Sonuç
+## 📖 Conclusion
 
-Bu proje sayesinde modern e-ticaret altyapısının uçtan uca nasıl geliştirileceği deneyimlenmiştir.  
-Backend tarafında **güvenlik, performans, entegrasyon** odaklı çözümler; frontend tarafında ise **kullanıcı dostu, modern ve responsive** arayüzler uygulanmıştır.
+Through this project, the full development of a modern e-commerce infrastructure has been experienced.  
+On the backend side, solutions were applied with a focus on **security, performance, and integration**; on the frontend side, **user-friendly, modern, and responsive** interfaces were implemented.
 
-Projede kullanılan tüm yapılar, ölçeklenebilir ve genişletilebilir bir mimari oluşturmayı hedeflemektedir.
-
----
-
-## 🧰 Gereksinimler (Prerequisites)
-
-> Aşağıdaki araçların kurulu olması gerekir:
-
-- **.NET SDK 8.0 veya 9.0**
-- **Node.js 18+** ve **npm**
-- **SQLite** (geliştirme için dahili dosya veritabanı yeterlidir)
-- **EF Core CLI** (opsiyonel): `dotnet tool install --global dotnet-ef`
-- **Redis** (cache için) — local kurulum veya Docker
-- **RabbitMQ** (mesaj kuyruğu/MassTransit için) — local kurulum veya Docker
-- (Opsiyonel) **MailTrap** veya SMTP bilgileri (e-posta bildirimleri için)
-
-> Not: Depoda **API** (ASP.NET Core) ve **b2bhirdanet** (React/TypeScript) klasörleri bulunmaktadır. Diller C# ve TypeScript ağırlıklıdır.
+All applied structures aim to build a scalable and extensible architecture.
 
 ---
 
-## 🔧 Kurulum & Çalıştırma
+## 🧰 Requirements (Prerequisites)
 
-### 1) Depoyu klonla
+> The following tools must be installed:
+
+- **.NET SDK 8.0 or 9.0**
+- **Node.js 18+** and **npm**
+- **SQLite** (local file database for dev is enough)
+- **EF Core CLI** (optional): `dotnet tool install --global dotnet-ef`
+- **Redis** (for caching) — local or Docker
+- **RabbitMQ** (for messaging/MassTransit) — local or Docker
+- (Optional) **MailTrap** or SMTP credentials (for email notifications)
+
+> Note: The repository contains **API** (ASP.NET Core) and **b2bhirdanet** (React/TypeScript) folders. Languages are mainly C# and TypeScript.
+
+---
+
+## 🔧 Setup & Run
+
+### 1) Clone the repository
 
 ```bash
 git clone https://github.com/menesscelik/B2B-HirdaNet.git
@@ -165,8 +165,8 @@ cd B2B-HirdaNet
 ```bash
 cd API
 dotnet restore
-dotnet ef database update        # ilk kurulumda migrate et
-dotnet run                       # API varsayılan olarak https://localhost:5105'te açılabilir
+dotnet ef database update        # run migrations on first setup
+dotnet run                       # API runs on https://localhost:5105
 ```
 
 ### 3) Frontend (React/TypeScript)
@@ -174,14 +174,14 @@ dotnet run                       # API varsayılan olarak https://localhost:5105
 ```bash
 cd ../b2bhirdanet
 npm install
-npm run dev                      # varsayılan olarak http://localhost:5173
+npm run dev                      # runs on http://localhost:5173
 ```
 
-> Geliştirme akışı: Önce Docker ile Redis/RabbitMQ’yu başlatın → API’yi çalıştırın → Frontend’i başlatın.
+> Dev flow: Start Redis/RabbitMQ with Docker → Run API → Run Frontend.
 
 ---
 
-## 🧑‍💻 Geliştirici Komutları
+## 🧑‍💻 Developer Commands
 
 **EF Core**
 
@@ -193,29 +193,29 @@ dotnet ef database update
 **NPM**
 
 ```bash
-npm run dev       # geliştirme
-npm run build     # üretim derlemesi
-npm run preview   # build sonrası yerel önizleme
+npm run dev       # development
+npm run build     # production build
+npm run preview   # local preview after build
 ```
 
 ---
 
-## ❓ Sık Karşılaşılan Sorular
+## ❓ FAQ
 
-- **Veritabanı dosyası nerede?**  
-  SQLite kullanıyorsanız `app.db` gibi bir dosya API çalıştığında proje kökünde oluşur.
+- **Where is the database file?**  
+  If using SQLite, a file like `app.db` will be created at the root when API runs.
   
-- **JWT Key nedir?**  
-  `appsettings.json` altındaki `Jwt:Key` alanı, token imzalama anahtarıdır. Yerelde uzun ve güçlü bir key kullanın.
+- **What is the JWT Key?**  
+  It’s defined under `Jwt:Key` in `appsettings.json`. Use a long, strong key locally.
   
-- **Cache/RabbitMQ olmadan çalışır mı?**  
-  API temel fonksiyonları çalışır, ancak mesajlaşma/önbellek özellikleri devre dışı kalır veya sınırlı çalışır.
+- **Does it work without Cache/RabbitMQ?**  
+  Basic API functions work, but messaging/caching features will be limited or disabled.
   
 
 ---
 
-## 🔐 Güvenlik Notları
+## 🔐 Security Notes
 
-- Gizli bilgileri `.gitignore` dışındaki dosyalara koymayın.
-- Üretimde **HTTPS**, **Güçlü JWT Key**, **CORS ayarları** ve **Rate Limiting** uygulayın.
-- Admin arayüz erişimlerini **Policy/Role** bazlı kontrol edin.
+- Do not put secrets in files tracked by Git.
+- In production, always enable **HTTPS**, use a **Strong JWT Key**, configure **CORS**, and enable **Rate Limiting**.
+- Restrict Admin access with **Policy/Role** based authorization.
